@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Checkout</title>
+    <base href="https://michellekwan.github.io/antiux/">
 </head>
 <body style=
 "background-image: url(https://stylebyemilyhenderson.com/wp-content/uploads/2020/04/UpdatedEmily-Henderson-Current-Animated-Movies-1670x1541.jpg);
 background-repeat: repeat;">
     <h1><span style="background-color: blue; color:yellow;">CHECKOUT</span></h1>
-    <form action="cancel.html" method="post"> 
+    <form action="cancel.html"> 
 
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PERSONAL INFORMATION HERE: </span><br>
         <input type="text" style="margin:5px" id="lastname" placeholder="last name" required><br>
@@ -21,9 +22,13 @@ background-repeat: repeat;">
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PERSONAL INFORMATION HERE: </span><br>
         <input type="number" style="margin:5px" id="zip code" placeholder="zip code" required><br>
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PERSONAL INFORMATION HERE: </span><br>
+        <input type="text" style="margin:5px" id="state" placeholder="state" required><br>
+        <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PERSONAL INFORMATION HERE: </span><br>
         <input type="text" style="margin:5px" id="address" placeholder="address" required><br>
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PERSONAL INFORMATION HERE: </span><br>
         <input type="text" style="margin:5px" id="city" placeholder="city" required><br>
+
+        
 
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR PAYMENT INFORMATION HERE: </span><br>
         <div class="cardnumber" style="padding:5px;">
@@ -235,9 +240,9 @@ background-repeat: repeat;">
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR COST INFORMATION HERE: </span><br> 
         <input type="number" style="margin:5px; width:30%;" id="total" placeholder="booking fee * number of tickets" required><br>
         <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR COST INFORMATION HERE: </span><br>
-        <input type="number" style="margin:5px; width:30%;" id="total" placeholder="total * tax" required><br>
-        <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR COST INFORMATION HERE: </span><br>
-        <input type="number" style="margin:5px; width:30%;" id="total" placeholder="final total" required><br>
+        <input type="number" style="margin:5px; width:30%;" id="total" placeholder="subtotal (including fees)" required><br>
+        <span style="background-color: blue; color:yellow;">PLEASE INPUT YOUR FINAL COST INFORMATION HERE: </span><br>
+        <input type="number" style="margin:5px; width:30%;" id="total" placeholder="subtotal * tax" required><br>
         <br>     
 
         <input type="submit" style="background-color:#66ff00; font-size: 30px; text-align:left; padding: 20px;"value="✓"><br>
@@ -245,13 +250,13 @@ background-repeat: repeat;">
         <text style="font-size:10px; position:relative; left:6%;"><span style="background-color: red; color:#66ff00;">Click the above green button to cancel your purchase!:)</span><br></text>
 
 
-        <text style="position: relative; bottom:-1000px;"><span style="background-color: blue; color:yellow;">The cost of a ticket is $13.59. The theater fee is $5.67 per ticket. The booking fee is $11.23 per ticket. The total should be multiplied by 12% for tax.
+        <text style="position: relative; bottom:-1000px;"><span style="background-color: blue; color:yellow;">The cost of a ticket is $13.59. The theater fee is $5.67 per ticket. The booking fee is $11.23 per ticket. The total should include 12% for tax.
         
         </span></text><br> 
 
     </form>
 
-    <form action="confirmation.html" method="post"> 
+    <form action="confirmation.html"> 
         <input type="submit" style="background-color:red; font-size: 10px; text-align:left; padding: 10px; position: relative; bottom:-2000px;" value="X Complete Purchase X"><br>
     </form>
 
