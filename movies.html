@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Selection</title>
+</head>
+<body style=
+"background-image: url(https://stylebyemilyhenderson.com/wp-content/uploads/2020/04/UpdatedEmily-Henderson-Current-Animated-Movies-1670x1541.jpg);
+background-repeat: repeat;"> 
+    <h1 style= "font-family: Comic Sans MS, Comic Sans, cursive;; color:white; text-align:center;"><span style="background-color: blue; color:yellow;">MOVIE CENTRAL:)</span></h1>
+    
+    <form action="home.html" method="post">
+
+        <span style="background-color: blue; color:yellow;">In order to buy your movie ticket(s), please input the movie ID of the movie you would like to view. Please also put down the date and time that you would like to view the movie.</span>
+        <br>
+        <input type="text" id="movieid" placeholder="movie id" required>
+        <br>
+    
+        <select id="quantity" name="quantity" required>
+            <option value="31">XXXI</option>
+            <option value="30">XXX</option>
+            <option value="29">XXIX</option>
+            <option value="28">XXVIII</option>
+            <option value="27">XXVII</option>
+            <option value="26">XXVI</option>
+            <option value="25">XXV</option>
+            <option value="24">XXIV</option>
+            <option value="23">XXIII</option>
+            <option value="22">XXII</option>
+            <option value="21">XXI</option>
+            <option value="20">XX</option>
+            <option value="19">XIX</option>
+            <option value="18">XVIII</option>
+            <option value="17">XVII</option>
+            <option value="16">XVI</option>
+            <option value="15">XV</option>
+            <option value="14">XIV</option>
+            <option value="13">XIII</option>
+            <option value="12">XII</option>
+            <option value="11">XI</option>
+            <option value="10">X</option>
+            <option value="9">IX</option>
+            <option value="8">VIII</option>
+            <option value="7">VII</option>
+            <option value="6">VI</option>
+            <option value="5">V</option>
+            <option value="4">IV</option>
+            <option value="3">III</option>
+            <option value="2">II</option>
+            <option value="1">I</option>
+        </select>
+        <span style="background-color: blue; color:yellow;">day</span>
+        <br>
+        <div class="month">
+            <input type="radio" id="ticket_quantity" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">march</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">december</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: red; color:#66ff00;">september</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: red; color:#66ff00;">june</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: red; color:#66ff00;">january</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">august</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">may</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">october</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">april</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: blue; color:yellow;">february</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: red; color:#66ff00;">july</span></label><br>
+            <input type="radio" id="month" placeholder="month" name="month">
+            <label for="html"><span style="background-color: red; color:#66ff00;">november</span></label><br>
+        </div>
+        <br>
+        <input type="range" min="1" max="8000" value="0" class="slider" id="myRange">
+        
+        <p><span style="background-color: red; color:#66ff00;">year: </span><span id="demo" style="background-color: blue; color:yellow;"></span></p>
+
+        <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+        </script>
+
+        <input type="time" id="time" placeholder="time" required>
+        <span style="background-color: blue; color:yellow; font-family: Comic Sans MS, Comic Sans, cursive;">PST</span>
+        <br>
+        
+        <input type="submit" value="go back" style="background-color:#66ff00;width:90%; font-size: 7px; text-align:left;">
+    </form>
+    
+    <form action="checkout.html" method="post">
+        <input type="submit" value="checkout" style="background-color:red; width:50%; padding:1px; font-size: 7px; text-align:left;">
+    </form>
+
+    <style>
+        input {
+            padding: 5px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+        }
+
+        body {
+            font-family: Snell Roundhand, cursive;
+            text-align:center;
+            color:#66ff00
+        }
+    </style>
+
+    <text id="movies" style= "font-family: Comic Sans MS, Comic Sans, cursive; text-align:center; position:relative; bottom:-2000px;"><span style="background-color:red; color:#66ff00;">
+        LIST OF MOVIES AND IDs:
+        LqssdO6Bd3: SCOOBY DOO,
+        TD2IO5nITJ: JAWS,
+        IGRLML2MiG: AVENGERS,
+        MgVB9EjYum: LORD OF THE RINGS,
+        Dw4fak8gH8L: SHASHANK REDEMPTION,
+        LlS0qVl6vz: THE DARK KNIGHT,
+        8COE7KGEe0: BARBIE,
+        WAWJHfoQaL: ANGRY MEN,
+        s7q6NOecnO: SCHINDLER'S LIST,
+        sanyTocfiU: IT,
+        36JlHYbj0J: SOUND OF FREEDOM,
+        wd9mqseOsO: TALK TO ME,
+        MzoDhIDALe: STRAYS,
+        ymYacasU59: PITCH PERFECT,
+        4GHDpsSkEG: WITCHES,
+        iBJ9MsPKZL: GANGNAM ZOMBIE,
+        ffLHufaCBT: LAKEWOOD,
+        3Iqjifr2XK: A MILLION MILES AWAY,
+        MO1l50Viz4: JURASSIC WORLD,
+        T2qZqbvqmE: ELEMENTAL,
+        jjpaYjVDXK: FLAMIN' HOT,
+        w3E5Fg9yHS: ICE AGE,
+        iP5gTMNMjc: WILDE LIFE,
+        TFWiqp479j: ONE DAY,
+        WfHWZsaduB: PECULIAR CHILDREN,
+        HMeVuro88O: STRANGE WORLD,
+        qksZyy4jt1: AVATAR,
+        InrDYHE61t: ELEPHANT,
+        7bkrZxb1Wl: CLOUD NINE,
+        YgywhNEbIT: LEMONADE MOUTH,
+        IeH8ZAkA4d: THE FAULT IN OUR STARS,
+        OA9ZSmxJMv: VENOM,
+        TXLX8p8I1x: BLACK WIDOW,
+        dTkHAAVsMR: THE HAUNTED MANSION,
+        9OjQv61aSg: CRAZY RICH ASIANS,
+        Js6wQwfch7: HARRY POTTER,
+        pr7EjlsWw7: PAST LIVES,
+        bnx8IeL0P6: SPIDERMAN,
+        X3HdPwMd8G: PARASITE</span>
+    
+    </text>
+        
+</body>
+
+</html>
